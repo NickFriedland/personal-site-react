@@ -1,0 +1,43 @@
+@keyframes icon-expand {
+  0%,
+  100% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+    color: purple;
+  }
+}
+
+i {
+  color: rgb(52, 52, 52);
+  font-size: 4rem;
+}
+
+i:hover {
+  animation: icon-expand 2s infinite;
+}
+
+.link-container {
+  display: flex;
+  align-items: space-around;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 4em;
+}
+
+.Contact {
+  width: 100%;
+}
+
+/* keyframe for animation
+- @name {
+  animate: name
+}
+
+Ex.
+- @bubble animate: {
+   bubble
+}
+
+*/
