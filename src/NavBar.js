@@ -1,68 +1,34 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from './logo.png';
+import './NavBar.css';
+import {
+  Navbar,
+  Nav,
+  NavItem} from 'reactstrap';
 
 class NavBar extends Component {
   render() {
     const activeStyle = {
-      fontWeight: 'bold',
-      color: 'light gray'
-    };
-
+      fontSize: '1.5em',
+      color: 'black' 
+    }
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-        <NavLink
-          className="navbar-brand"
-          exact
-          to="/"
-          activeStyle={activeStyle}
-        >
-          <img src={logo} alt="logo" style={{ width: '40px' }} />
-        </NavLink>
-        <div className="navbar" id="navbarNav">
-          <span className="navbar-nav">
-            <li className="nav-item active">
-              <NavLink
-                exact
-                to={`./About`}
-                activeStyle={activeStyle}
-                className="nav-link"
-              >
-                About Me
-              </NavLink>
-            </li>
-            <li className="nav-item active">
-              <NavLink
-                exact
-                to={`./Portfolio`}
-                activeStyle={activeStyle}
-                className="nav-link"
-              >
-                My Portfolio
-              </NavLink>
-            </li>
-            <li className="nav-item active">
-              <NavLink
-                exact
-                to={`./Blog`}
-                activeStyle={activeStyle}
-                className="nav-link"
-              >
-                My Blog
-              </NavLink>
-            </li>
-            <li className="nav-item active">
-              <NavLink
-                exact
-                to={`./Contact`}
-                activeStyle={activeStyle}
-                className="nav-link"
-              >
-                Contact
-              </NavLink>
-            </li>
-          </span>
-        </div>
+      // <nav className="navbar navbar-expand-sm navbar-light bg-light">
+      <nav>
+        <Navbar color='light' light expand='md' className='nav'>
+          <NavLink to='/' activeStyle={activeStyle}> Nick Friedland </NavLink>
+          <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink exact to='/Portfolio' className='normal' activeClassName='active'>Portfolio</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink exact to='/Blog' className='normal' activeClassName='active'>Blog</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink exact to='/Contact' className='normal' activeClassName='active'>Contact</NavLink>
+              </NavItem>
+            </Nav>
+        </Navbar>
       </nav>
     );
   }

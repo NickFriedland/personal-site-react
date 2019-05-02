@@ -1,0 +1,16 @@
+.nav {
+  font-family: 'Unica One';
+  font-size: 1.25em;
+}
+
+.normal {
+  color: blue;
+  text-decoration: none;
+  padding-left: 1em;
+}
+
+.active {
+  color: red;
+  text-decoration: none;
+  padding-left: 1em;
+}
