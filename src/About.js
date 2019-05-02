@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import nick from './nick.jpg';
+import nick from './images/nick.jpg';
 import './About.css';
 // import styled from 'styled-components';
 
@@ -7,7 +7,7 @@ class About extends Component {
   render() {
     return (
       <div className="About">
-        <div class="container">
+        <div className="container">
           <h1>Hi! I'm Nick.</h1>
           <div className="row">
             <div className="col-3">

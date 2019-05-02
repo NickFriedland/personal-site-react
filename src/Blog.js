@@ -35,7 +35,7 @@ class Blog extends Component {
             <CardImg
               top
               width="100%"
-              src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+              src=""
               alt="Card image cap"
             />
             <CardBody>
@@ -51,7 +51,7 @@ class Blog extends Component {
           <Card>
             <CardImg
               top
-              src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+              src=""
               alt="Card image cap"
             />
             <CardBody>
@@ -67,7 +67,7 @@ class Blog extends Component {
           <Card>
             <CardImg
               top
-              src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+              src=""
               alt="Card image cap"
             />
             <CardBody>
