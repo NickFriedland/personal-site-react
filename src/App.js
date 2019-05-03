@@ -17,8 +17,8 @@ class App extends Component {
         <NavBar />
         <div className="main-content" style={{ height: '600px' }}>
           <Switch>
-            <Route exact path="/" render={() => <Home />} />
-            <Route exact path="/about" render={() => <About />} />
+            <Route exact path="/" render={() => <About />} />
+            {/* <Route exact path="/about" render={() => <About />} /> */}
             <Route exact path="/portfolio" render={() => <Portfolio />} />
             <Route exact path="/blog" render={() => <Blog />} />
             <Route exact path="/contact" render={() => <Contact />} />
