@@ -1,16 +1,19 @@
-.nav {
+.navbar
+{
   font-family: 'Unica One';
-  font-size: 1.25em;
+  font-size: 1em;
+  color:'#ffffff';
+  border-bottom:1.5px solid rgb(213, 213, 213);
 }
 
 .normal {
-  color: blue;
+  color: #000000;
   text-decoration: none;
   padding-left: 1em;
 }
 
 .active {
-  color: red;
+  color: #308ff5;
   text-decoration: none;
   padding-left: 1em;
 }

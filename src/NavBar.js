@@ -15,9 +15,12 @@ class NavBar extends Component {
     return (
       // <nav className="navbar navbar-expand-sm navbar-light bg-light">
       <nav>
-        <Navbar color='light' light expand='md' className='nav'>
+        <Navbar expand='md' className='nav'>
           <NavLink to='/' activeStyle={activeStyle}> Nick Friedland </NavLink>
           <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink exact to='/' className='normal' activeClassName='active'>About</NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink exact to='/Portfolio' className='normal' activeClassName='active'>Portfolio</NavLink>
               </NavItem>
