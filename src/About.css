@@ -1,3 +1,10 @@
+.header {
+  background-color: #f4f8fa;
+  padding: 5em 5em;
+  border-bottom: 1.5px solid rgb(213, 213, 213);
+  margin-bottom: 2em;
+}
+
 .headshot {
   width: 20em;
   /* height: 22em; */
