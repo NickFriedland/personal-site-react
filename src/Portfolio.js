@@ -12,6 +12,7 @@ import {
   Button
 } from 'reactstrap';
 import relish from './images/portfolio_images/relish_homepage.png';
+import langly from './images/portfolio_images/langly.png';
 
 class Portfolio extends Component {
   render() {
@@ -21,7 +22,7 @@ class Portfolio extends Component {
           <Card>
             <CardImg
               top
-              src={relish}
+              src={langly}
               alt="Card image cap"
             />
             <CardBody>
