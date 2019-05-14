@@ -20,16 +20,13 @@ class About extends Component {
           <div className="col-6">
             <h2 className="section-header">About Me</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              tempor a enim vel interdum. Morbi mollis magna enim, tempor
-              imperdiet odio iaculis sit amet. Proin commodo interdum nunc nec
-              pharetra. Ut et ornare mauris. Orci varius natoque penatibus et
-              magnis dis parturient montes, nascetur ridiculus mus. Praesent
-              efficitur, felis sed tincidunt tincidunt, est enim viverra leo,
-              sit amet luctus ante odio pellentesque erat. Orci varius natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus
-              mus. Vivamus pulvinar ex quis purus aliquam, ut feugiat ipsum
-              mattis. Maecenas sed metus quis neque lobortis gravida.
+              I am a full stack software engineer with experience in JavaScript- including React.js, jQuery, Node.js, and Express- as well as Python, Flask, and PostgreSQL. I'm passionate about making a positive social and environmental impact in my work. I am especially excited about green tech and environmental innovation.
+            </p>
+            <p>
+              In my personal time, I enjoy making art, writing creatively, cooking, listening to all kinds of music, language learning, and various other creative pursuits. I’m fluent in Spanish and eager to learn more languages.
+            <p>
+            </p>
+              I’m currently located in Northern California, which is where I grew up, but I love to travel and am open to opportunities and adventures domestically and abroad.
             </p>
           </div>
           <div className="col-2 contact">

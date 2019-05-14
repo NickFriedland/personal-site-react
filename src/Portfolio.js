@@ -19,7 +19,7 @@ class Portfolio extends Component {
       <div>
         <div className="portfolio-header">
           <h1>Portfolio Projects</h1>
-          <h3>Here are some examples of my work from bootcamp, hackathons, passion projects and internships.</h3>
+          <h3>Examples of my work from hackathons, passion projects and internships.</h3>
         </div>
         <div>
           <CardDeck>
