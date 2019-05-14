@@ -1,13 +1,4 @@
-@keyframes icon-expand {
-  0%,
-  100% {
-    transform: scale(0.8);
-  }
-  50% {
-    transform: scale(1.2);
-    color: purple;
-  }
-}
+
 
 i {
   color: rgb(52, 52, 52);
