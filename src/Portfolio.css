@@ -7,16 +7,19 @@
 }
 
 .portfolio-header h1 {
-  color: white;
   padding-top: 100px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 30em;
+  font-family: 'Noto Serif';
+  font-weight: 700;
+  font-size: 3.5em;
 }
 
 .portfolio-header h3 {
-  max-width: 30em;
+  font-family: 'Cormorant Garamond';
+  font-weight:700;
+  font-size: 2em;
 }
 
 /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);

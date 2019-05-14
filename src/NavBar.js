@@ -27,9 +27,9 @@ class NavBar extends Component {
               <NavItem>
                 <NavLink exact to='/Blog' className='normal' activeClassName='active'>Blog</NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink exact to='/Contact' className='normal' activeClassName='active'>Contact</NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
         </Navbar>
       </nav>
