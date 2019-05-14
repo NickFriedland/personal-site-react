@@ -34,7 +34,6 @@
   overflow: hidden;
 }
 
-
 .body {
   display: flex;
   justify-content: center;
@@ -64,8 +63,8 @@
   padding-bottom: 2em;
 }
 
-i {
-  font-size: 3em;
+.about-link-container a i {
+  font-size: 2.75em;
 }
 
 i:hover {
