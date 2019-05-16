@@ -1,9 +1,9 @@
 .portfolio-header {
   position: relative;
+  width: 100%;
   height: 100vh;
   background: rgb(0, 0, 0);
   overflow: hidden;
-  margin-bottom: 3em;
 }
 
 .portfolio-header h1 {
@@ -30,10 +30,46 @@
 
 .portfolio-header img {
   position: absolute;
+  width: 100%;
   left: 0;
   top: -20%;
   z-index: 1;
   opacity: 0.5;
+}
+
+.portfolio-odd {
+  display: flex;
+  height: 40em;
+  /* background:#f4f8fa; */
+  background: #D3D3D3;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 3em;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+
+.portfolio-img {
+  margin: 100px;
+  padding:0;
+  overflow: hidden;
+  border: 2px solid rgb(41, 41, 41)
+}
+
+.portfolio-desc {
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.portfolio-even {
+  display: flex;
+  height: 30em;
+  /* background:#f4f8fa; */
+  background: #fff;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 3em;
 }
 
 /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
