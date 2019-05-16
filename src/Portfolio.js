@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Portfolio.css';
 import relish from './images/portfolio_images/relish_homepage.png';
 import langly from './images/portfolio_images/langly.png';
+import subway from './images/portfolio_images/blue.png'
 import {
   Card,
   CardImg,
@@ -20,6 +21,7 @@ class Portfolio extends Component {
         <div className="portfolio-header">
           <h1>Portfolio Projects</h1>
           <h3>Examples of my work from hackathons, passion projects and internships.</h3>
+          <img src={ subway } alt="" srcset=""/>
         </div>
         <div>
           <CardDeck>
