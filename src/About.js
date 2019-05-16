@@ -7,13 +7,11 @@ class About extends Component {
   render() {
     return (
       <div className="about">
-        <div className="header">
-          <div className="headshot">
-            <img src={nick} alt="" className="headshot-img"/>
-          </div>
-          <div className="header-desc">
-            <h1 className="header-title">Nick Friedland</h1>
-            <h2 className="header-subtitle">Full stack software engineer passionate about environmental and social innovation</h2>
+        <div className="about-header">
+          <img src={nick} alt="" className="headshot-img"/>
+          <div className="about-header-desc">
+            <h1 className="about-header-title">Nick Friedland</h1>
+            <h2 className="about-header-subtitle">Full stack software engineer passionate about environmental and social innovation</h2>
           </div>
         </div>
         <div className="body">
