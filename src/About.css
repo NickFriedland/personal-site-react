@@ -65,9 +65,10 @@
 
 .about-link-container a i {
   font-size: 2.75em;
+  color:rgb(62, 61, 61);
 }
 
-i:hover {
+.about-link-container a i:hover {
   animation: icon-expand 2s infinite;
 }
 
