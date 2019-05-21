@@ -1,4 +1,5 @@
-.portfolio-header {
+/* PORTFOLIO HERO BANNER */
+.portfolio-hero {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -6,7 +7,7 @@
   overflow: hidden;
 }
 
-.portfolio-header h1 {
+.portfolio-hero h1 {
   padding-top: 150px;
   text-align: center;
   z-index: 2;
@@ -17,7 +18,7 @@
   font-size: 3.5em;
 }
 
-.portfolio-header h3 {
+.portfolio-hero h3 {
   padding: 20px;
   text-align: center;
   z-index: 2;
@@ -28,7 +29,7 @@
   font-size: 2em;
 }
 
-.portfolio-header img {
+.portfolio-hero img {
   position: absolute;
   width: 100%;
   left: 0;
@@ -37,42 +38,128 @@
   opacity: 0.5;
 }
 
-.portfolio-odd {
+/* PORTFOLIO PROJECT INSTANCES */
+
+.project {
   display: flex;
-  height: 40em;
-  /* background:#f4f8fa; */
-  background: #D3D3D3;
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 3em;
+}
+
+.langly {
+  height: 50em;
+  background: #D3D3D3;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 }
 
-.portfolio-img {
-  margin: 100px;
-  padding:0;
-  overflow: hidden;
-  border: 2px solid rgb(41, 41, 41)
-}
-
-.portfolio-desc {
-  margin-top: 100px;
-  overflow: hidden;
-}
-
-.portfolio-even {
-  display: flex;
-  height: 30em;
-  /* background:#f4f8fa; */
+.relish {
+  height: 40em;
   background: #fff;
   flex-direction: row-reverse;
-  justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 3em;
 }
 
-/* -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%); */
+div.item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin-top: 100px;
+  min-width: 400px;
+  max-width: 700px;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
 
+div.item * {
+  box-sizing: border-box;
+}
 
+div.item img {
+  max-width: 100%;
+  height: 400px;
+  vertical-align: top;
+}
+
+div.item:hover img {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+div.item * {
+  transition: all .5s ease-in-out;
+}
+
+div.item:hover a i {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* LANGLY SPECIFIC */
+
+.langly-item {
+  background: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.256);
+}
+
+.fa-share-square, .portfolio-github {
+  position: absolute;
+  top: 85%;
+  color: #fff;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 300s 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.fa-share-square {
+  left: 88%;
+  font-size: 50px;
+}
+
+.portfolio-github {
+  left: 75%;
+  font-size: 55px;
+}
+
+/* RELISH SPECIFIC */
+
+.relish-item {
+  background: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.fa-medium-m {
+  position: absolute;
+  top: 85%;
+  left: 88%;
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 300s 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+/* PORTFOLIO DESCRIPTIONS */
+
+div.desc {
+  margin-top: 100px;
+  overflow: hidden;
+  text-align: left;
+  color:rgb(62, 61, 61);
+}
+
+.desc > .title {
+  font-family: 'Noto Serif';
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.langly-desc {
+  padding-left: 3em;
+  font-size: 20px;
+}
+
+.relish-desc {
+  padding-right: 3em;
+  font-size: 20px;
+}

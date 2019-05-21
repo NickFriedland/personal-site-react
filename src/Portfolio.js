@@ -8,36 +8,45 @@ class Portfolio extends Component {
   render() {
     return (
       <div className="portfolio">
-        <div className="portfolio-header">
+        <div className="portfolio-hero">
           <h1>Portfolio Projects</h1>
           <h3>Examples of my work from hackathons, passion projects and internships.</h3>
           <img src={ subway } alt="" />
         </div>
-        <div className="portfolio-odd">
-          <img src={langly} alt="" className="portfolio-img col-6"/>  
-          <div className="portfolio-desc col-4">
-            <h3>Lang.ly</h3>
+        <div className="project langly">
+          <div className="item langly-item col-6">
+            <img src={langly} alt=""/>
+            <a href="https://github.com/NickFriedland/langly-react-fe" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github portfolio-github"></i>
+            </a>
+            <a href="https://langly-readability.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <i className="far fa-share-square"></i>
+            </a>
+          </div>
+          <div className="desc langly-desc col-4">
+            <h3 className="title">Langly</h3>
             <p>
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+              This project was the result of a two day hackathon. If given a URL for an article, it generates an estimated readability score, and formats the content for more convenient online reading.
             </p>
             <p>
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+              The app makes use of several well-known readability algorithms, npm and python packages, and API integrations. This is a work in progress: desired future functionality includes foreign language support, selecting words to define (or translate) them via a tool tip, and storing vocab as flashcards in a database.
             </p>
           </div>
         </div>
-        <div className="portfolio-even">
-          <img src={relish} alt="" className="portfolio-img col-6"/>  
-          <div className="portfolio-desc col-4">
-            <h3>The Relish</h3>
+        <div className="project relish">
+          <div className="item relish-item col-6">
+            <img src={relish} alt="" />
+            <a href="https://www.therelish.com/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-medium-m"></i>
+            </a>
+          </div>  
+          <div className="desc relish-desc col-4">
+            <h3 className="title">The Relish</h3>
             <p>
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+              I interned at The Relish while attending Rithm School. The internship consisted of building features and refactoring legacy code for an internal CMS tool that they used to gather and interpret user data. 
             </p>
             <p>
-              Some quick example text to build on the card title and make up
-              the bulk of the card's content.
+              Source code and web app access for this tool are unavailable because it is proprietary. However, I wrote a Medium article that describes in detail my contributions to this tool.
             </p>
           </div>
         </div>
