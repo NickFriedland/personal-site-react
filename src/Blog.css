@@ -1,0 +1,45 @@
+/* BLOG HERO BANNER */
+.blog-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  margin-bottom: 3em;
+}
+
+.blog-hero h1 {
+  padding-top: 420px;
+  padding-left: 30px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  color: rgb(237, 237, 237);
+  font-family: 'Noto Serif';
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.blog-hero h3 {
+  padding-left: 30px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  color: rgb(237, 237, 237);
+  font-family: 'Cormorant Garamond';
+  font-weight:700;
+  font-size: 1.75em;
+}
+
+.blog-hero img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -20%;
+  z-index: 1;
+  opacity: 0.35;
+}
+
+.tests {
+  margin: 30px;
+}

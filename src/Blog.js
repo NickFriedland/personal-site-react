@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-//import './Blog.css';
-// import styled from 'styled-components';
+import './Blog.css';
+import cincy from './images/blog_images/cincy_big.png';
+import blog_posts from './blogs.json';
 import {
   Card,
   CardImg,
@@ -14,28 +15,22 @@ import {
 
 class Blog extends Component {
   render() {
+    console.log(blog_posts)
+
     return (
       <div className="Blog">
-        <h1>The Twelve Dollar Beer Tour</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus
-          euismod ante, non venenatis eros viverra et. Aliquam ullamcorper felis
-          mi, ut sagittis purus dignissim a. Nam vel imperdiet neque, ut porta
-          nibh. Proin ultrices quam a ante condimentum, sed cursus massa
-          ultrices. In arcu nisl, efficitur vel tempor et, lobortis vel elit.
-          Maecenas vitae elit aliquam, maximus velit ac, viverra eros. Nam
-          hendrerit sed augue vel consectetur. Aliquam erat volutpat. Donec
-          feugiat, nunc id suscipit varius, enim dolor sagittis quam, vitae
-          convallis augue purus id magna. Suspendisse et feugiat nisl, et
-          malesuada est. Curabitur a quam leo. Fusce varius volutpat commodo.
-          Phasellus at tincidunt turpis.
-        </p>
-        <CardDeck>
+        <div className="blog-hero">
+          <h1>The Twelve Dollar Beer Tour</h1>
+          <h3>In 2017 I attended one game at every MLB ballpark. 
+            Here's what happened along the way.</h3>
+          <img src={ cincy } alt="" />
+        </div>
+        
+        <CardDeck className="tests">
           <Card>
             <CardImg
-              top
               width="100%"
-              src=""
+              src={cincy}
               alt="Card image cap"
             />
             <CardBody>
