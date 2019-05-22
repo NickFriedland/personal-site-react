@@ -55,7 +55,7 @@ class Portfolio extends Component {
               This project was the result of a two day hackathon. If given a URL for an article, it generates an estimated readability score, and formats the content for more convenient online reading.
             </p>
             <p>
-              The app makes use of several well-known readability algorithms, npm and python packages, and API integrations. Desired future functionality includes foreign language support, selecting words to define (or translate) them via a tool tip, and storing vocab as flashcards in a database.
+              The app makes use of several well-known readability algorithms, npm and python packages, and API integrations. Desired future functionality includes foreign language support, selecting words to define (or translate) in a tool tip, and storing vocab as flashcards in a database.
             </p>
           </div>
         </div>
