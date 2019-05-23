@@ -14,8 +14,41 @@ import {
 } from 'reactstrap';
 
 class Blog extends Component {
+  constructor(props) {
+    super(props);
+        this.state = {};
+    this.logArray = this.logArray.bind(this);
+  }
+
+  logArray() {
+    let arr = blog_posts["posts"];
+    arr.map(function(post) {
+      console.log(post["image"]); 
+      return <img src={post["image"]} alt=""/>
+      // return <Card>
+      //           <CardImg
+      //             width="100%"
+      //             src={post["image"]}
+      //             alt="Card image cap"
+      //           />
+      //           <CardBody>
+      //             <CardTitle>{post["title"]}</CardTitle>
+      //             <CardSubtitle>Card subtitle</CardSubtitle>
+      //             <CardText>
+      //               Some quick example text to build on the card title and make up
+      //               the bulk of the card's content.
+      //             </CardText>
+      //             <Button>Button</Button>
+      //           </CardBody>
+      //         </Card>
+      });
+  };
+
+      // return cards;
+
   render() {
-    console.log(blog_posts)
+    // console.log(blog_posts)
+    // let arr = blog_posts["posts"];
 
     return (
       <div className="Blog">
@@ -27,55 +60,8 @@ class Blog extends Component {
         </div>
         
         <CardDeck className="tests">
-          <Card>
-            <CardImg
-              width="100%"
-              src={cincy}
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle>Langly</CardTitle>
-              <CardSubtitle>Card subtitle</CardSubtitle>
-              <CardText>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              src=""
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle>Microblog</CardTitle>
-              <CardSubtitle>Card subtitle</CardSubtitle>
-              <CardText>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              src=""
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle>Jobly</CardTitle>
-              <CardSubtitle>Card subtitle</CardSubtitle>
-              <CardText>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-        </CardDeck>
+          {this.logArray()}
+        </CardDeck> 
       </div>
     );
   }
