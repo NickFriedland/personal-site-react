@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Blog.css';
-import cincy from './images/blog_images/cincy_big.png';
+import cincy from './images/blog_images/cincy_big.jpg';
 import outro from './images/blog_images/outro.jpeg';
 import blog_posts from './blogs.json';
 import {

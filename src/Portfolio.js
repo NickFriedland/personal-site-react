@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './Portfolio.css';
-import relish from './images/portfolio_images/relish_logo.png';
-import langly from './images/portfolio_images/langly.png';
-import subway from './images/portfolio_images/blue.png';
+import subway from './images/portfolio_images/blue.jpg';
+import relish from './images/portfolio_images/relish_logo.jpg';
+import langly from './images/portfolio_images/langly.jpg';
 import api from './images/portfolio_images/tech/api.png';
 import d3 from './images/portfolio_images/tech/d3.png';
 import firebase from './images/portfolio_images/tech/firebase.png';
