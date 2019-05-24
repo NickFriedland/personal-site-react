@@ -48,8 +48,14 @@
 .section-header {
   font-size: 2em;
   font-family: 'Noto Serif';
-
+  font-weight: 700;
   margin-bottom: 1em;
+  color:rgb(62, 61, 61);
+}
+
+.about-text {
+  font-size: 1.5em;
+  color:rgb(62, 61, 61);
 }
 
 .contact {
