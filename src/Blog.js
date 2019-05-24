@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Blog.css';
 import cincy from './images/blog_images/cincy_big.png';
+import outro from './images/blog_images/outro.jpeg';
 import blog_posts from './blogs.json';
 import {
   Card,
@@ -25,15 +26,17 @@ class Blog extends Component {
     return arr.map(function(post) {
       // return <img src={post["image"]} alt=""/>
       return <Card key={post["href"]} id="blog-card" >
-                <div className="card-image">
-                  <CardImg
-                    width="100%"
-                    src={require(`./images/blog_images/post_images/${post["image"]}`)}
-                    alt="Card image cap"
-                  />
-                  <img src={require(`./images/blog_images/post_images/team_logos/${post["logo"]}`)} alt="" className="team-logo" />
+                <div className="card-image-item">
+                  <a href={post["href"]} target="_blank" rel="noopener noreferrer">
+                    <CardImg
+                      width="100%"
+                      src={require(`./images/blog_images/post_images/${post["image"]}`)}
+                      alt="Card image cap"
+                      />
+                  </a>
                 </div>
                 <CardBody>
+                  <img src={require(`./images/blog_images/post_images/team_logos/${post["logo"]}`)} alt="" className="team-logo" />
                   <CardTitle id="title">{post["title"]}</CardTitle>
                   <CardSubtitle id="published-date">Published: {post["date"]}</CardSubtitle>
                   <CardText id="text">
@@ -64,7 +67,10 @@ class Blog extends Component {
         <div className="blog-body">
           <CardDeck className="card-deck">
             {this.generateCard()}
-          <h1>More to come!</h1> 
+            <div className="deck-end">
+              <img src={outro} alt="" />
+              <h1>More to come!</h1> 
+            </div>
           </CardDeck>
         </div>
       </div>
