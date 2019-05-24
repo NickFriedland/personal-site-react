@@ -17,30 +17,33 @@ class Blog extends Component {
   constructor(props) {
     super(props);
         this.state = {};
-    this.logArray = this.logArray.bind(this);
+    this.generateCard = this.generateCard.bind(this);
   }
 
-  logArray() {
+  generateCard() {
     let arr = blog_posts["posts"];
-    arr.map(function(post) {
-      console.log(post["image"]); 
-      return <img src={post["image"]} alt=""/>
-      // return <Card>
-      //           <CardImg
-      //             width="100%"
-      //             src={post["image"]}
-      //             alt="Card image cap"
-      //           />
-      //           <CardBody>
-      //             <CardTitle>{post["title"]}</CardTitle>
-      //             <CardSubtitle>Card subtitle</CardSubtitle>
-      //             <CardText>
-      //               Some quick example text to build on the card title and make up
-      //               the bulk of the card's content.
-      //             </CardText>
-      //             <Button>Button</Button>
-      //           </CardBody>
-      //         </Card>
+    return arr.map(function(post) {
+      // return <img src={post["image"]} alt=""/>
+      return <Card key={post["href"]} id="blog-card" >
+                <div className="card-image">
+                  <CardImg
+                    width="100%"
+                    src={require(`./images/blog_images/post_images/${post["image"]}`)}
+                    alt="Card image cap"
+                  />
+                  <img src={require(`./images/blog_images/post_images/team_logos/${post["logo"]}`)} alt="" className="team-logo" />
+                </div>
+                <CardBody>
+                  <CardTitle id="title">{post["title"]}</CardTitle>
+                  <CardSubtitle id="published-date">Published: {post["date"]}</CardSubtitle>
+                  <CardText id="text">
+                    {post["text"]}
+                  </CardText>
+                  <form action={post["href"]} method="get" target="_blank">
+                    <Button id="button">Read More</Button>
+                  </form>
+                </CardBody>
+              </Card>
       });
   };
 
@@ -58,10 +61,12 @@ class Blog extends Component {
             Here's what happened along the way.</h3>
           <img src={ cincy } alt="" />
         </div>
-        
-        <CardDeck className="tests">
-          {this.logArray()}
-        </CardDeck> 
+        <div className="blog-body">
+          <CardDeck className="card-deck">
+            {this.generateCard()}
+          <h1>More to come!</h1> 
+          </CardDeck>
+        </div>
       </div>
     );
   }

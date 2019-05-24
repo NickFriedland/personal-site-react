@@ -1,3 +1,8 @@
+.Blog {
+  background-color: #f4f8fa;
+  box-sizing: border-box;
+}
+
 /* BLOG HERO BANNER */
 .blog-hero {
   position: relative;
@@ -5,7 +10,7 @@
   height: 100vh;
   background: rgb(0, 0, 0);
   overflow: hidden;
-  margin-bottom: 3em;
+  /* margin-bottom: 3em; */
 }
 
 .blog-hero h1 {
@@ -37,9 +42,73 @@
   left: 0;
   top: -20%;
   z-index: 1;
-  opacity: 0.35;
+  opacity: 0.6;
 }
 
-.tests {
+/* BLOG POSTS */
+.blog-body {
+  height:100%;
+}
+
+.card-deck {
   margin: 30px;
+  justify-content: space-between;
+}
+
+#blog-card {
+  min-width: 25%;
+  margin: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.256);
+  flex: 0 0 0%;
+}
+
+.card-image {
+  background: #fff;
+}
+
+.card-image * {
+  transition: all .5s ease-in-out;
+}
+
+.card-img {
+  opacity: 0.7;
+  filter: grayscale(100%);
+}
+
+.team-logo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 100px;
+  width: auto;
+  transform: translate(-50%, -50%) scale(1);
+  /* transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
+.card-img:hover {
+  opacity: 1;
+  filter: none;
+  transition: transform 3s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-img:hover .team-logo {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 3s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#title {
+  color: rgb(62, 61, 61);
+  font-family: 'Noto Serif';
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+#text {
+  font-size:20px;
+}
+
+#button {
+  background-color: #308ff5;
+  border: 1px solid #144a83;
 }
