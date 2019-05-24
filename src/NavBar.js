@@ -13,7 +13,6 @@ class NavBar extends Component {
       color: 'black' 
     }
     return (
-      // <nav className="navbar navbar-expand-sm navbar-light bg-light">
       <nav>
         <Navbar expand='md' className='nav'>
           <NavLink to='/' activeStyle={activeStyle}> Nick Friedland </NavLink>
@@ -27,9 +26,6 @@ class NavBar extends Component {
               <NavItem>
                 <NavLink exact to='/Blog' className='normal' activeClassName='active'>Blog</NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink exact to='/Contact' className='normal' activeClassName='active'>Contact</NavLink>
-              </NavItem> */}
             </Nav>
         </Navbar>
       </nav>
