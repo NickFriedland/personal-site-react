@@ -1,18 +1,38 @@
 .navbar {
   font-family: 'Unica One';
   font-size: 1.5em;
-  color:'#ffffff';
+  color:'#606060';
   border-bottom:1.5px solid rgb(213, 213, 213);
 }
 
 .normal {
   color: #000000;
-  text-decoration: none;
+  /* text-decoration: none; */
   padding-left: 1em;
 }
 
 .active {
   color: #308ff5;
-  text-decoration: none;
+  /* text-decoration: none; */
   padding-left: 1em;
+}
+
+.nav-logo {
+  display: none;
+}
+
+.nav-text {
+  font-size: 1.5em;
+  color: #000000;
+}
+
+/*For Ipad Portrait view and below that*/
+@media (max-width: 768px) {
+  .nav-text {
+   display: none;
+ }
+  .nav-logo {
+  display: block;
+  width: 3em;
+} 
 }
