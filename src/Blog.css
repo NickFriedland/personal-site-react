@@ -25,6 +25,7 @@
   font-weight: 700;
   font-size: 3.5em;
   margin-bottom: 0.5em;
+  box-sizing: border-box;
 }
 
 .blog-hero h3 {
@@ -32,6 +33,7 @@
   font-family: 'Cormorant Garamond';
   font-weight:700;
   font-size: 1.75em;
+  padding: 0 15px;
 }
 
 
@@ -42,14 +44,13 @@
 
 .card-deck {
   margin: 30px;
-  justify-content: space-between;
 }
 
 #blog-card {
-  min-width: 25%;
-  margin: 50px;
+  /* min-width: 80%; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.256);
   flex: 0 0 0%;
+  margin-bottom: 50px;
 }
 
 /* CARD DECK OUTRO */
@@ -111,7 +112,7 @@
 
 .card-image-item:hover a img {
   opacity: 1;
-  filter: grayscale(0%);
+  filter: none;
 }
 
 /* CARD TEXT & BUTTON */
@@ -137,3 +138,14 @@
   background-color:rgb(85, 85, 85);
   border: 1px solid rgb(62, 61, 61);
 }
+
+/*For Ipad Portrait view and below that*/
+@media (max-width: 768px) {
+  .card-image-item * {
+    transition: none;
+  }
+  .card-img{
+    filter: none;
+    opacity: 1;
+  }
+ }
