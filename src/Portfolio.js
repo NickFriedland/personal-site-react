@@ -64,7 +64,7 @@ class Portfolio extends Component {
             <div className="item relish-item">
               <img src={relish} alt="" />
               <a href="https://medium.com/@nick.friedland/my-first-software-engineering-internship-f62bfe6dc8ff" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-medium-m"></i>
+                <i className="fab fa-medium-m"></i>
               </a>
             </div>
             <div className="tech-logos relish-logos">
