@@ -1,7 +1,8 @@
 /* HEADER SECTION */
 
-.about-header {
+.hero {
   display: flex;
+  flex-wrap: wrap;
   background-color: #f4f8fa;
   padding: 2em 2em;
   border-bottom: 1.5px solid rgb(213, 213, 213);
@@ -11,18 +12,18 @@
   text-align: left;
 }
 
-.about-header-desc {
+.hero-desc {
   max-width: 30em;
 }
 
-.about-header-title {
+.hero-title {
   font-family: 'Noto Serif';
   font-weight: 700;
   font-size: 3.5em;
   color:rgb(62, 61, 61);
 }
 
-.about-header-subtitle {
+.hero-subtitle {
   font-size: 1.5em;
   font-family: 'Cormorant Garamond';
   font-weight:700;
@@ -31,6 +32,7 @@
 
 .headshot-img {
   width: 15em;
+  min-width: 10em;
   margin-right: 10px;
   overflow: hidden;
 }
@@ -39,45 +41,51 @@
 
 .body {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   text-align: left;
   margin-bottom: 3em;
 }
 
-.section-header {
-  font-size: 2em;
+.about-section {
   font-family: 'Noto Serif';
   font-weight: 700;
   margin-bottom: 1em;
   color:rgb(62, 61, 61);
+  max-width: 60%;
 }
 
-.about-text {
+.about-section p {
   font-size: 1.5em;
+}
+
+.contact-section {
+  margin-left: 3em;
+  font-family: 'Noto Serif';
+  font-weight: 700;
   color:rgb(62, 61, 61);
 }
 
-.contact {
-  margin-left: 3em;
+.about-section h2, .contact-section h2 {
+  margin-bottom: 1em;
 }
 
-.about-link-container {
+.icon-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-.about-link-container a {
-  padding-bottom: 2em;
+.icon-container a {
+  padding-bottom: 4em;
 }
 
-.about-link-container a i, .about-link-container.fa-github {
+.icon-container a i, .icon-container.fa-github {
   font-size: 2.75em;
   color:rgb(62, 61, 61);
 }
 
-.about-link-container a i:hover {
+.icon-container a i:hover {
   animation: icon-expand 2s infinite;
 }
 
@@ -89,5 +97,37 @@
   50% {
     transform: scale(1.2);
     color: #308ff5;
+  }
+}
+
+/*For Ipad Portrait view and below that*/
+@media (max-width: 768px) {
+  .body {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero {
+    text-align: center;
+  }
+  .about-section {
+    order: 2;
+    max-width: 100%;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+
+  .about-section h2 {
+    text-align: center;
+  }
+  .contact-section {
+    order: 1;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .icon-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
   }
 }
