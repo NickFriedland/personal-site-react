@@ -5,44 +5,35 @@
 
 /* BLOG HERO BANNER */
 .blog-hero {
-  position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background: rgb(0, 0, 0);
-  overflow: hidden;
-}
-
-.blog-hero img {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: -20%;
-  z-index: 1;
-  opacity: 0.6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.44),rgba(0, 0, 0, 0.44)), url('./images/blog_images/cincy_big.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .blog-hero h1 {
-  padding-top: 420px;
-  padding-left: 30px;
-  text-align: center;
-  z-index: 2;
-  position: relative;
   color: rgb(237, 237, 237);
   font-family: 'Noto Serif';
   font-weight: 700;
   font-size: 3.5em;
+  margin-bottom: 0.5em;
 }
 
 .blog-hero h3 {
-  padding-left: 30px;
-  text-align: center;
-  z-index: 2;
-  position: relative;
   color: rgb(237, 237, 237);
   font-family: 'Cormorant Garamond';
   font-weight:700;
   font-size: 1.75em;
 }
+
 
 /* BLOG POSTS */
 .blog-body {

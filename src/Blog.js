@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Blog.css';
-import cincy from './images/blog_images/cincy_big.jpg';
 import outro from './images/blog_images/outro.jpeg';
 import blog_posts from './blogs.json';
 import {
@@ -50,19 +49,15 @@ class Blog extends Component {
       });
   };
 
-      // return cards;
-
   render() {
-    // console.log(blog_posts)
-    // let arr = blog_posts["posts"];
-
     return (
       <div className="Blog">
         <div className="blog-hero">
-          <h1>The Twelve Dollar Beer Tour</h1>
-          <h3>In 2017 I attended one game at every MLB ballpark. 
-            Here's what happened along the way.</h3>
-          <img src={ cincy } alt="" />
+          <div className="blog-inner">
+            <h1>The Twelve Dollar Beer Tour</h1>
+            <h3>In 2017 I attended one game at every MLB ballpark. 
+              Here's what happened along the way.</h3>
+          </div>
         </div>
         <div className="blog-body">
           <CardDeck className="card-deck">

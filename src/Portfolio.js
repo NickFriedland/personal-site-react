@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Portfolio.css';
-import subway from './images/portfolio_images/blue.jpg';
 import relish from './images/portfolio_images/relish_logo.jpg';
 import langly from './images/portfolio_images/langly.jpg';
 import api from './images/portfolio_images/tech/api.png';
@@ -22,9 +21,10 @@ class Portfolio extends Component {
     return (
       <div className="portfolio">
         <div className="portfolio-hero">
-          <h1>Portfolio Projects</h1>
-          <h3>Examples of my work from hackathons, passion projects and internships.</h3>
-          <img src={ subway } alt="" />
+          <div class="hero-inner">
+            <h1>Portfolio Projects</h1>
+            <h3>Examples of my work from hackathons, passion projects and internships.</h3>
+          </div>
         </div>
         <div className="project langly">
           <div className="col-6 langly-left">
