@@ -21,7 +21,7 @@ class Portfolio extends Component {
     return (
       <div className="portfolio">
         <div className="portfolio-hero">
-          <div class="hero-inner">
+          <div className="hero-inner">
             <h1>Portfolio Projects</h1>
             <h3>Examples of my work from hackathons, passion projects and internships.</h3>
           </div>

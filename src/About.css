@@ -112,12 +112,12 @@
   .about-section {
     order: 2;
     max-width: 100%;
-    margin: 10px;
+    margin: 0 1em;
     box-sizing: border-box;
   }
-
   .about-section h2 {
     text-align: center;
+    margin-bottom:0.5em;
   }
   .contact-section {
     order: 1;
@@ -125,9 +125,19 @@
     width: 100%;
     text-align: center;
   }
+  .contact-section h2 {
+    margin-bottom:0.5em;
+  }
   .icon-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin-bottom: 3em;
+  }
+  .icon-container a {
+    padding-bottom: 0;
+  }
+  .icon-container a i:hover {
+    animation: none;
   }
 }

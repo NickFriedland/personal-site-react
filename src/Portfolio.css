@@ -12,6 +12,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  box-sizing: border-box;
 }
 
 .portfolio-hero h1 {
@@ -27,6 +28,7 @@
   font-family: 'Cormorant Garamond';
   font-weight:700;
   font-size: 1.75em;
+  padding: 0 15px;
 }
 
 /* PORTFOLIO PROJECT INSTANCES */
@@ -178,4 +180,12 @@ div.desc {
 .relish-desc {
   padding-right: 3em;
   font-size: 20px;
+}
+
+/*For Ipad Portrait view and below that*/
+@media (max-width: 768px) {
+  .portfolio-hero {
+    background-size: 100em;
+    background-position: 10% -20%;
+  }
 }
