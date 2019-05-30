@@ -32,137 +32,31 @@
 }
 
 /* PORTFOLIO PROJECT INSTANCES */
-
 .project {
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 3em;
+  height: auto;
+  overflow: auto;
+  padding-bottom: 5em;
 }
 
 .langly {
-  height: 50em;
   background: #D3D3D3;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 }
 
-.relish {
-  height: 40em;
-  background: #fff;
-  flex-direction: row-reverse;
-}
-
-div.item {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  min-width: 400px;
-  max-width: 700px;
-  width: 100%;
-  padding: 0;
-  text-align: center;
-}
-
-div.item * {
-  box-sizing: border-box;
-}
-
-div.item img {
-  max-width: 100%;
-  height: 400px;
-  vertical-align: top;
-}
-
-div.item:hover img {
-  opacity: 0.3;
-  filter: grayscale(100%);
-}
-
-div.item * {
-  transition: all .5s ease-in-out;
-}
-
-div.item:hover a i {
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-/* LANGLY SPECIFIC */
-.langly-left {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.langly-item {
-  background: #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.256);
-}
-
-.fa-share-square, .portfolio-github {
-  position: absolute;
-  top: 85%;
-  color: #fff;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 300s 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
-
-.fa-share-square {
-  left: 88%;
-  font-size: 50px;
-}
-
-.portfolio-github {
-  left: 75%;
-  font-size: 55px;
-}
-
-/* RELISH SPECIFIC */
-
-.relish-item {
-  background: #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-}
-
-.fa-medium-m {
-  position: absolute;
-  top: 85%;
-  left: 88%;
-  font-size: 45px;
-  color: rgb(255, 255, 255);
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 300s 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
-
-/* TECH LOGOS */
-
-.tech-logos {
-  text-align: left;
-}
-
-.tech-logos img { 
-  height: 80px;
-  width: auto;
-  padding: 10px;
-}
-
-.relish-logos img {
-  margin: 0 5px;
-}
-
-#js-html-css {
-  height: 88px;
-}
-
 /* PORTFOLIO DESCRIPTIONS */
-
-div.desc {
-  margin-top: 100px;
+.desc {
+  margin: 3em 3em 1em 3em;
   overflow: hidden;
   text-align: left;
   color:rgb(62, 61, 61);
+  max-width:100%;
+  font-size: 18px;
 }
 
 .desc > .title {
@@ -172,20 +66,150 @@ div.desc {
   margin-bottom: 0.5em;
 }
 
-.langly-desc {
-  padding-left: 3em;
-  font-size: 20px;
+.links-mobile {
+  display: none;
 }
 
-.relish-desc {
-  padding-right: 3em;
-  font-size: 20px;
+.medium-link {
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* PORTFOLIO IMAGE */
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 1em 3em;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  background: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.item * {
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+}
+
+.item img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.item:hover img {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+.item:hover a i {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.item a i {
+  position: absolute;
+  top: 85%;
+  color: rgb(165, 165, 165);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 300s 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.langly-item .fa-share-square {
+  left: 88%;
+  font-size: 50px;
+}
+
+.langly-item .portfolio-github {
+  left: 75%;
+  font-size: 55px;
+}
+
+.relish-item .fa-medium-m {
+  left: 88%;
+  font-size: 45px;
+}
+
+/* TECH LOGOS */
+.tech-logos {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 3em;
+  width: 100%;
+}
+
+.tech-logos img { 
+  height: 50px;
+  width: auto;
+}
+
+#js-html-css {
+  height: 55px;
 }
 
 /*For Ipad Portrait view and below that*/
 @media (max-width: 768px) {
   .portfolio-hero {
-    background-size: 100em;
-    background-position: 10% -20%;
+    background-size: 110em;
+    background-position: 10% 0;
+  }
+  .project {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+  }
+  .langly {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .desc {
+    margin: 1em 1em 0 1em;
+    max-width: 100%;
+    text-align: center;
+  }
+  .links-mobile {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .links-mobile i {
+    color: rgb(62, 61, 61);
+    padding: 15px;
+    font-size: 2.5em;
+  }
+  .project-images {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .item {
+    margin: 1em 1em 0 1em;
+    width: 100%;
+  }
+  .item a i {
+    display: none;
+    transform: none;
+    transition: none;
+  }
+  .item:hover img {
+    opacity: 1;
+    filter: none;
+  }
+  .tech-logos {
+    flex-wrap: wrap;
+    margin: 0 1em 3em 1em;
+    justify-content: center;
+  }
+  .tech-logos img {
+    margin: 1em;
   }
 }

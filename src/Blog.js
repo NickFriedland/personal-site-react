@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Blog.css';
-import outro from './images/blog_images/outro.jpeg';
+// import outro from './images/blog_images/outro.jpeg';
 import blog_posts from './blogs.json';
 import {
   Card,
@@ -62,10 +62,6 @@ class Blog extends Component {
         <div className="blog-body">
           <CardDeck className="card-deck">
             {this.generateCard()}
-            <div className="deck-end">
-              <img src={outro} alt="" />
-              <h1>More to come!</h1> 
-            </div>
           </CardDeck>
         </div>
       </div>
